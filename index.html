@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Campanha de Arrecadação - Shalom SP</title>
+
+    <meta
+      name="description"
+      content="Camapnha de Arrecadação para Materiais Litúrgicos - Shalom São Paulo"
+    />
+    <meta name="Comunidade Católica Shalom" content="Shalom São Paulo" />
+
+    <!-- Icons -->
+    <link
+      rel="icon"
+      href="https://cdn.pixelcave.com/favicon.svg"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.pixelcave.com/favicon.png"
+      type="image/png"
+    />
+
+    <!-- Inter web font from bunny.net (GDPR compliant) -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Play CDN (mostly for development/testing purposes) -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind CSS v4 Configuration -->
+    <style type="text/tailwindcss">
+      /* Class based dark mode */
+      @custom-variant dark (&:where(.dark, .dark *));
+
+      /* Theme configuration */
+      @theme {
+        /* Configurando as novas fontes */
+        --font-poppins: "Poppins", sans-serif;
+        --font-dafoe: "Mr Dafoe", cursive;
+
+        /* Suas Cores Customizadas (Pode alterar os códigos HEX aqui!) */
+        --color-shalom-azul: #1E3A8A; /* Exemplo de azul escuro */
+        --color-shalom-dourado: #D4AF37; /* Exemplo de dourado/amarelo */
+      }
+      
+      /* Forçando a fonte Poppins como padrão para o site todo */
+      body {
+        font-family: var(--font-poppins);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div
+      id="page-container"
+      class="mx-auto flex min-h-dvh w-full min-w-[320px] flex-col bg-gray-100"
+    >
+      <!-- Page Content -->
+      <main id="page-content" class="flex max-w-full flex-auto flex-col">
+        <!-- Hero -->
+        <div class="bg-gray-900">
+          <!-- Header -->
+          <header id="page-header" class="flex flex-none items-center py-10">
+          <div
+            class="container mx-auto flex items-center justify-center px-4 lg:px-8 xl:max-w-6xl"
+          >
+            <a
+              class="inline-flex items-center gap-2 text-base tracking-wide text-white hover:opacity-75"
+            >
+              <img 
+                src="assets/icone.png" 
+                alt="Ícone Shalom" 
+                class="h-6 w-auto object-contain"
+              />
+              <span class="italic">Campanha de Arrecadação - Shalom SP</span>
+            </a>
+          </div>
+        </header>
+          <!-- END Header -->
+
+          <!-- Hero Content -->
+          <div
+            class="container mx-auto px-4 pt-6 lg:px-8 lg:pt-14 xl:max-w-6xl"
+          >
+            <div class="text-center">
+              <h2
+                class="mb-4 text-5xl font-extrabold text-balance text-white md:text-7xl leading-tight"
+              >
+                Para Deus, sempre o <br />
+                <span class="inline-block mt-2 rounded-lg bg-blue-600 px-4 py-1 text-white">melhor!</span>
+              </h2>
+              <h3
+                class="mx-auto mt-6 text-lg font-medium text-gray-400 md:text-xl md:leading-relaxed lg:w-2/3"
+              >
+                Ajude a Comunidade Católica Shalom de São Paulo a renovar seus materiais litúrgicos!
+              </h3>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 pt-10 pb-16">
+              <a
+                href="#doacoes"
+                class="inline-flex items-center justify-center gap-2 rounded-full border border-blue-800 bg-blue-800 px-6 py-4 leading-6 font-semibold text-white hover:border-blue-700/50 hover:bg-blue-700/50 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  data-slot="icon"
+                  class="hi-mini hi-heart inline-block size-5 opacity-75"
+                >
+                  <path
+                    d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"
+                  />
+                </svg>
+                <span>Ajude a missão!</span>
+              </a>
+            </div>
+          
+            <div
+              class="relative z-10 mx-2 -mb-20 rounded-xl bg-white p-2 shadow-lg sm:-mb-40 lg:mx-16"
+            >
+              <img
+                src="assets/imagem_missa.jpg"
+                alt="Objetos Litúrgicos"
+                class="mx-auto aspect-[21/9] w-full rounded-lg object-cover"
+              />
+            </div>
+          </div>
+          </div>
+
+        <!-- END Hero -->
+
+        <!-- Quem somos -->
+            
+        <div class="relative bg-linear-to-b from-gray-900 from-50% to-white to-50% pt-24 sm:pt-48 pb-12 sm:pb-16">
+          <div class="absolute inset-0 skew-y-1 bg-blue-900"></div>
+  
+          <div class="relative container mx-auto space-y-12 px-4 pb-16 pt-24 lg:px-8 lg:pb-24 lg:pt-20 xl:max-w-7xl">
+            <div class="text-center">
+              <h2 class="text-5xl font-extrabold text-white md:text-7xl">
+                Quem somos?
+              </h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+              <div class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10">
+                <div class="flex items-center gap-4 mb-5">
+                  <svg class="hi-solid hi-desktop-computer h-8 w-8 text-blue-300 flex-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg>
+                  <h4 class="text-2xl font-bold text-white md:text-3xl">Nossa História</h4>
+                </div>
+                <p class="text-base leading-relaxed text-white/75">Fundada em 1982, a Comunidade Católica Shalom é uma Associação Privada Internacional de Fiéis, reconhecida pelo Vaticano com o decreto do dia 22 de fevereiro de 2007. Presente na cidade de São Paulo há quase 22 anos, a comunidade realiza diversas ações de evangelização.</p>
+              </div>
+
+              <div class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10">
+                <div class="flex items-center gap-4 mb-5">
+                  <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" class="h-8 w-8 text-blue-300 flex-none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                  <h4 class="text-2xl font-bold text-white md:text-3xl">Nossas ações</h4>
+                </div>
+                <p class="text-base leading-relaxed text-white/75">Estamos unindo forças para renovar os materiais litúrgicos da missão, garantindo a dignidade das celebrações.</p>
+              </div>
+
+              <div class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10 sm:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-4 mb-5">
+                  <svg class="hi-solid hi-pencil h-8 w-8 text-blue-300 flex-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" /></svg>
+                  <h4 class="text-2xl font-bold text-white md:text-3xl">A Campanha</h4>
+                </div>
+                <p class="text-base leading-relaxed text-white/75">Você pode contribuir através das cotas de doação abaixo ou entrando em contato diretamente com nossa secretaria.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative container mx-auto px-4 xl:max-w-5xl">
+            <div class="relative overflow-hidden rounded-2xl shadow-2xl aspect-video bg-gray-200">
+      
+              <div id="carousel-slider" class="flex h-full transition-transform duration-500 ease-out">
+        
+                <div class="min-w-full h-full relative group">
+                  <img src="assets/foto1.jpg" class="h-full w-full object-cover" alt="Legenda da Foto 1">
+                  <div class="absolute inset-x-0 bottom-10 bg-gray-900/70 p-4 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-lg font-semibold">Legenda da Foto 1</p>
+                    <p class="text-sm"></p>
+                  </div>
+                </div>
+        
+                <div class="min-w-full h-full relative group">
+                  <img src="assets/foto2.jpg" class="h-full w-full object-cover" alt="Legenda da Foto 2">
+                  <div class="absolute inset-x-0 bottom-10 bg-gray-900/70 p-4 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-lg font-semibold">Legenda da Foto 2</p>
+                    <p class="text-sm"></p>
+                  </div>
+                </div>
+        
+                <div class="min-w-full h-full relative group">
+                  <img src="assets/foto3.jpg" class="h-full w-full object-cover" alt="Legenda da Foto 3">
+                  <div class="absolute inset-x-0 bottom-10 bg-gray-900/70 p-4 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-lg font-semibold">Legenda da Foto 3</p>
+                    <p class="text-sm"></p>
+                  </div>
+                </div>
+
+                <div class="min-w-full h-full relative group">
+                  <img src="assets/foto4.jpg" class="h-full w-full object-cover" alt="Legenda da Foto 4">
+                  <div class="absolute inset-x-0 bottom-10 bg-gray-900/70 p-4 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-lg font-semibold">Legenda da Foto 4</p>
+                    <p class="text-sm"></p>
+                  </div>
+                </div>
+        
+                <div class="min-w-full h-full relative group">
+                  <img src="assets/foto5.jpg" class="h-full w-full object-cover" alt="Legenda da Foto 5">
+                  <div class="absolute inset-x-0 bottom-10 bg-gray-900/70 p-4 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p class="text-lg font-semibold">Legenda da Foto 5</p>
+                    <p class="text-sm"></p>
+                  </div>
+                </div>
+        
+              </div>
+        
+              <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/30 p-2 text-white backdrop-blur-sm hover:bg-white/50 transition z-20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+              </button>
+              <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/30 p-2 text-white backdrop-blur-sm hover:bg-white/50 transition z-20">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+              </button>
+        
+              <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 z-20">
+                <div class="dot h-2 w-2 rounded-full bg-white/50 transition-all"></div>
+                <div class="dot h-2 w-2 rounded-full bg-white/50 transition-all"></div>
+                <div class="dot h-2 w-2 rounded-full bg-white/50 transition-all"></div>
+                <div class="dot h-2 w-2 rounded-full bg-white/50 transition-all"></div>
+                <div class="dot h-2 w-2 rounded-full bg-white/50 transition-all"></div>
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            let currentIndex = 0;
+            const slider = document.getElementById('carousel-slider');
+            const dots = document.querySelectorAll('.dot');
+            const totalSlides = 5; // ATUALIZADO PARA 5
+        
+            function updateCarousel() {
+              // Move o slider para a imagem correta
+              slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+              // Atualiza os pontos (dots) de paginação
+              dots.forEach((dot, i) => {
+                dot.style.width = i === currentIndex ? '1.5rem' : '0.5rem';
+                dot.style.backgroundColor = i === currentIndex ? 'white' : 'rgba(255,255,255,0.5)';
+              });
+            }
+        
+            function nextSlide() {
+              currentIndex = (currentIndex + 1) % totalSlides;
+              updateCarousel();
+            }
+        
+            function prevSlide() {
+              currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+              updateCarousel();
+            }
+        
+            // Inicializa o estado dos pontos ao carregar a página
+            updateCarousel();
+          </script>
+        </div>
+          
+        <!-- END Quem somos -->
+
+        <!-- Pricing Section -->
+        <div id="doacoes" class="bg-white">
+          <div
+            class="container mx-auto space-y-10 px-6 py-24 sm:px-12 lg:px-8 lg:py-16 xl:max-w-4xl"
+          >
+            <div class="text-center">
+              <h2 class="mb-4 text-3xl font-extrabold md:text-4xl">
+                Presenteie a Missão de São Paulo!
+              </h2>
+              <h3
+                class="mx-auto text-base font-medium text-gray-600 md:text-xl md:leading-relaxed lg:w-2/3"
+              >
+                Você pode ajudar a missão presenteando um item litúrgico, ou doando um valor avulso. Deus abençoe!
+              </h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4 lg:gap-8">
+              
+              <div
+                class="flex flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-white hover:border-blue-400 transition-colors"
+              >
+                <div class="aspect-square w-full bg-gray-100">
+                  <img
+                    src="assets/item1.jpg"
+                    alt="Foto do Item 1"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="flex grow flex-col p-4 sm:p-6 text-center">
+                  <h4 class="mb-2 text-base font-bold sm:text-xl text-gray-800">
+                    Item 1
+                  </h4>
+                  <div class="mb-4">
+                    <span class="text-xl font-extrabold text-blue-600 sm:text-3xl">R$ 150</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-800 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-blue-700 focus:ring-3 focus:ring-blue-500/50 transition"
+                  >
+                    Presenteie!
+                  </button>
+                </div>
+              </div>
+              <!-- ITEM 2 -->
+              <div
+                class="flex flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-white hover:border-blue-400 transition-colors"
+              >
+                <div class="aspect-square w-full bg-gray-100">
+                  <img
+                    src="assets/item2.jpg"
+                    alt="Foto do Item 2"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="flex grow flex-col p-4 sm:p-6 text-center">
+                  <h4 class="mb-2 text-base font-bold sm:text-xl text-gray-800">
+                    Item 2
+                  </h4>
+                  <div class="mb-4">
+                    <span class="text-xl font-extrabold text-blue-600 sm:text-3xl">R$ 300</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-800 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-blue-700 focus:ring-3 focus:ring-blue-500/50 transition"
+                  >
+                    Presenteie!
+                  </button>
+                </div>
+              </div>
+              <!-- END ITEM 2 -->
+              </div>
+            </div>
+        </div>
+
+        <!-- END Pricing Section -->
+
+        <!-- Footer -->
+        <footer id="page-footer" class="bg-white">
+          <div
+            class="container mx-auto flex flex-col gap-6 px-4 py-16 text-center text-sm md:flex-row md:justify-between md:gap-0 md:text-left lg:px-8 lg:py-32 xl:max-w-6xl"
+          >
+            <nav class="space-x-2 sm:space-x-4">
+              <a
+                href="javascript:void(0)"
+                class="font-medium text-gray-700 hover:text-blue-500"
+              >
+                About
+              </a>
+              <a
+                href="javascript:void(0)"
+                class="font-medium text-gray-700 hover:text-blue-500"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="javascript:void(0)"
+                class="font-medium text-gray-700 hover:text-blue-500"
+              >
+                Privacy Policy
+              </a>
+            </nav>
+            <div class="text-gray-500">
+              <span class="font-medium">Comunidade Católica Shalom - Missão de São Paulo</span> ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </div>
+          </div>
+        </footer>
+        <!-- END Footer -->
+      </main>
+      <!-- END Page Content -->
+    </div>
+    <!-- END Page Container -->
+  </body>
+</html>
