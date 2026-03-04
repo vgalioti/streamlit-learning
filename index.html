@@ -56,6 +56,10 @@
         /* Suas Cores Customizadas (Pode alterar os códigos HEX aqui!) */
         --color-shalom-azul: #1E3A8A; /* Exemplo de azul escuro */
         --color-shalom-dourado: #D4AF37; /* Exemplo de dourado/amarelo */
+        --color-marrom: #AE7B12;
+        --color-marrom-escuro: #8F5E19;
+        --color-marrom-claro: #A88553;
+        --color-creme: #FFFCF1;
       }
       
       /* Forçando a fonte Poppins como padrão para o site todo */
@@ -73,71 +77,58 @@
       <!-- Page Content -->
       <main id="page-content" class="flex max-w-full flex-auto flex-col">
         <!-- Hero -->
-        <div class="bg-gray-900">
-          <!-- Header -->
-          <header id="page-header" class="flex flex-none items-center py-10">
-          <div
-            class="container mx-auto flex items-center justify-center px-4 lg:px-8 xl:max-w-6xl"
-          >
-            <a
-              class="inline-flex items-center gap-2 text-base tracking-wide text-white hover:opacity-75"
-            >
-              <img 
-                src="assets/icone.png" 
-                alt="Ícone Shalom" 
-                class="h-6 w-auto object-contain"
-              />
-              <span class="italic">Campanha de Arrecadação - Shalom SP</span>
-            </a>
-          </div>
-        </header>
-          <!-- END Header -->
+         <!-- Header -->
+        <div class="relative bg-[url('assets/hero-bg-mb-1.png')] md:bg-[url('assets/hero-bg.png')] bg-cover bg-center bg-no-repeat">
 
-          <!-- Hero Content -->
-          <div
-            class="container mx-auto px-4 pt-6 lg:px-8 lg:pt-14 xl:max-w-6xl"
-          >
+          <header id="page-header" class="relative z-10 flex flex-none items-center py-10">
+            <div class="container mx-auto flex items-center justify-center px-4 lg:px-8 xl:max-w-6xl">
+              <a href="" class="inline-flex items-center gap-2 text-base tracking-wide text-marrom-escuro hover:opacity-75 transition-opacity">
+                <img 
+                  src="assets/icone.png" 
+                  alt="Ícone Shalom" 
+                  class="h-6 w-auto object-contain"
+                />
+                <span class="italic font-medium">Campanha de Arrecadação - Shalom SP</span>
+              </a>
+            </div>
+          </header>
+          <div class="relative z-10 container mx-auto px-4 pt-6 lg:px-8 lg:pt-14 xl:max-w-6xl">
             <div class="text-center">
-              <h2
-                class="mb-4 text-5xl font-extrabold text-balance text-white md:text-7xl leading-tight"
-              >
-                Para Deus, sempre o <br />
-                <span class="inline-block mt-2 rounded-lg bg-blue-600 px-4 py-1 text-white">melhor!</span>
+              
+              <h2 class="mb-4 leading-tight">
+                <span class="block font-dafoe text-7xl md:text-8xl font-normal text-marrom">
+                  Vai e
+                </span>
+                
+                <span class="inline-block mt-2 rounded-xl bg-marrom px-6 py-2 text-6xl md:text-7xl font-extrabold text-creme shadow-lg">
+                  reconstrói
+                </span>
+                <br />
+                
+                <span class="inline-block mt-4 text-4xl md:text-5xl font-normal text-marrom">
+                  a minha igreja
+                </span>
               </h2>
-              <h3
-                class="mx-auto mt-6 text-lg font-medium text-gray-400 md:text-xl md:leading-relaxed lg:w-2/3"
-              >
-                Ajude a Comunidade Católica Shalom de São Paulo a renovar seus materiais litúrgicos!
+              
+              <h3 class="mx-auto mt-8 px-6 text-base font-medium text-marrom-escuro md:px-0 md:text-lg md:leading-relaxed lg:w-2/3">
+                Inspirados pelo chamado feito a São Francisco, queremos oferecer o melhor ao Senhor e cuidar do Sagrado confiado à missão.
               </h3>
             </div>
+            
             <div class="flex flex-wrap justify-center gap-4 pt-10 pb-16">
               <a
                 href="#doacoes"
-                class="inline-flex items-center justify-center gap-2 rounded-full border border-blue-800 bg-blue-800 px-6 py-4 leading-6 font-semibold text-white hover:border-blue-700/50 hover:bg-blue-700/50 hover:text-white focus:ring-3 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700 transition-colors"
+                class="inline-flex items-center justify-center gap-2 rounded-full bg-marrom-escuro px-8 py-4 leading-6 font-bold text-creme hover:opacity-90 focus:ring-3 focus:ring-marrom/50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  data-slot="icon"
-                  class="hi-mini hi-heart inline-block size-5 opacity-75"
-                >
-                  <path
-                    d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-slot="icon" class="hi-mini hi-heart inline-block size-5">
+                  <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
                 </svg>
-                <span>Ajude a missão!</span>
+                <span>Participe da Reconstrução!</span>
               </a>
             </div>
-          
-            <div
-              class="relative z-10 mx-2 -mb-20 rounded-xl bg-white p-2 shadow-lg sm:-mb-40 lg:mx-16"
-            >
-              <img
-                src="assets/imagem_missa.jpg"
-                alt="Objetos Litúrgicos"
-                class="mx-auto aspect-[21/9] w-full rounded-lg object-cover"
-              />
+            
+            <div class="relative z-10 mx-2 -mb-20 rounded-xl bg-white p-2 shadow-lg sm:-mb-40 lg:mx-16">
+              <img src="assets/imagem_missa.jpg" alt="Objetos Litúrgicos" class="mx-auto aspect-[21/9] w-full rounded-lg object-cover" />
             </div>
           </div>
           </div>
