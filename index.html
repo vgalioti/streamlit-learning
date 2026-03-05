@@ -78,7 +78,7 @@
       <main id="page-content" class="flex max-w-full flex-auto flex-col">
         <!-- Hero -->
          <!-- Header -->
-        <div class="relative bg-[url('assets/hero-bg-mb-1.png')] md:bg-[url('assets/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+        <div class="relative z-20 shadow-[0_10px_100px_rgba(0,0,0,0.6)] bg-[url('assets/hero-bg-mb-1.png')] md:bg-[url('assets/hero-bg.png')] bg-cover bg-center bg-no-repeat">
 
           <header id="page-header" class="relative z-10 flex flex-none items-center py-10">
             <div class="container mx-auto flex items-center justify-center px-4 lg:px-8 xl:max-w-6xl">
@@ -123,13 +123,14 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-slot="icon" class="hi-mini hi-heart inline-block size-5">
                   <path d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z" />
                 </svg>
-                <span>Participe da Reconstrução!</span>
+                <span>Participe da Campanha!</span>
               </a>
             </div>
             
             <div class="relative z-10 mx-2 -mb-20 rounded-xl bg-white p-2 shadow-lg sm:-mb-40 lg:mx-16">
-              <img src="assets/imagem_missa.jpg" alt="Objetos Litúrgicos" class="mx-auto aspect-[21/9] w-full rounded-lg object-cover" />
+              <img src="assets/imagem_missa_1.jpg" alt="Objetos Litúrgicos" class="mx-auto aspect-[21/9] w-full rounded-lg object-cover" />
             </div>
+            
           </div>
           </div>
 
@@ -137,41 +138,83 @@
 
         <!-- Quem somos -->
             
-        <div class="relative bg-linear-to-b from-gray-900 from-50% to-white to-50% pt-24 sm:pt-48 pb-12 sm:pb-16">
-          <div class="absolute inset-0 skew-y-1 bg-blue-900"></div>
-  
+        <div class="relative bg-[url('assets/about_bg.png')] bg-cover bg-center bg-no-repeat pt-24 sm:pt-48 pb-12 sm:pb-16"> 
+          
           <div class="relative container mx-auto space-y-12 px-4 pb-16 pt-24 lg:px-8 lg:pb-24 lg:pt-20 xl:max-w-7xl">
             <div class="text-center">
-              <h2 class="text-5xl font-extrabold text-white md:text-7xl">
-                Quem somos?
+              <h2 class="text-6xl font-dafoe text-creme md:text-7xl lg:text-7xl leading-tight text-balance">
+                "Vai e reconstroi a Minha Igreja"
               </h2>
+              <p class="mt-4 text-base md:text-xl text-white/80 italic">
+                - Palavra do Senhor a São Francisco de Assis.
+              </p>
             </div>
-
+            
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-              <div class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10">
+              
+              <div class="rounded-3xl bg-marrom-escuro p-10 shadow-xs transition hover:bg-marrom">
                 <div class="flex items-center gap-4 mb-5">
-                  <svg class="hi-solid hi-desktop-computer h-8 w-8 text-blue-300 flex-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg>
-                  <h4 class="text-2xl font-bold text-white md:text-3xl">Nossa História</h4>
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-creme flex-none" fill="currentColor">
+                    <polygon points="426.71,64.529 512,149.819 483.372,178.447 471.304,179.138 471.304,190.515 442.676,219.143 357.386,133.853 "/>
+                    <path d="M34.978,448.479c20.415,20.415,46.785,32.738,74.254,34.699c29.283,2.09,56.284-7.633,76.03-27.379 c19.746-19.746,29.47-46.748,27.379-76.03c-1.574-22.046-9.828-43.381-23.577-61.501L451.246,56.083 c4.888-4.888,4.888-12.813,0-17.7l-6.174-6.174c-4.888-4.888-12.813-4.888-17.7,0L165.189,294.393 c-18.12-13.75-39.456-22.003-61.501-23.577c-29.283-2.09-56.284,7.633-76.03,27.379s-29.47,46.747-27.379,76.03 C2.239,401.694,14.562,428.064,34.978,448.479z M58.85,424.606c-30.335-30.335-33.612-76.244-7.319-102.537 c26.294-26.294,72.201-23.017,102.537,7.318c30.335,30.335,33.612,76.242,7.318,102.537 C135.094,458.218,89.186,454.942,58.85,424.606z"/>
+                    <path d="M423.98,152.956l4.882-4.882l-6.826-6.826c-3.333-3.334-3.333-8.736,0-12.068 c3.333-3.331,8.736-3.331,12.068,0l6.826,6.826l4.882-4.882c3.333-3.331,8.736-3.331,12.067,0c3.333,3.334,3.333,8.736,0,12.068 l-4.882,4.882l30.373,30.373l-12.067,12.07l-30.374-30.374l-4.883,4.883c-1.666,1.666-3.85,2.499-6.034,2.499 c-2.185,0-4.368-0.833-6.034-2.499C420.648,161.691,420.648,156.289,423.98,152.956z"/>
+                    <polygon points="85.29,64.529 0,149.819 28.631,178.449 40.696,179.138 40.696,190.515 69.325,219.143 154.614,133.853 "/>
+                    <path d="M511.721,374.225c2.09-29.283-7.633-56.284-27.379-76.03c-19.746-19.746-46.748-29.47-76.03-27.379 c-22.046,1.574-43.381,9.828-61.501,23.577L84.628,32.211c-4.888-4.888-12.813-4.888-17.7,0l-6.174,6.174 c-4.888,4.888-4.888,12.813,0,17.7l262.183,262.183c-13.75,18.12-22.003,39.456-23.577,61.501 c-2.09,29.283,7.633,56.284,27.379,76.03c19.746,19.746,46.748,29.47,76.03,27.379c27.468-1.96,53.839-14.284,74.254-34.699 C497.438,428.064,509.761,401.694,511.721,374.225z M350.613,431.924c-26.294-26.294-23.017-72.201,7.318-102.537 c30.335-30.335,76.244-33.612,102.537-7.318c26.294,26.294,23.017,72.201-7.319,102.537 C422.814,454.942,376.907,458.218,350.613,431.924z"/>
+                    <path d="M88.02,152.956l-4.882-4.882l6.826-6.826c3.333-3.334,3.333-8.736,0-12.068 c-3.333-3.331-8.736-3.331-12.068,0l-6.826,6.826l-4.882-4.882c-3.333-3.331-8.736-3.331-12.067,0 c-3.333,3.334-3.333,8.736,0,12.068l4.882,4.882l-30.373,30.373l12.067,12.07l30.374-30.374l4.882,4.883 c1.666,1.666,3.85,2.499,6.034,2.499c2.185,0,4.368-0.833,6.034-2.499C91.352,161.692,91.352,156.29,88.02,152.956z"/>
+                  </svg>
+                  <h4 class="text-2xl font-bold text-creme md:text-3xl">A Missão</h4>
                 </div>
-                <p class="text-base leading-relaxed text-white/75">Fundada em 1982, a Comunidade Católica Shalom é uma Associação Privada Internacional de Fiéis, reconhecida pelo Vaticano com o decreto do dia 22 de fevereiro de 2007. Presente na cidade de São Paulo há quase 22 anos, a comunidade realiza diversas ações de evangelização.</p>
+                <p class="text-justify text-base leading-relaxed text-creme">
+                  Fundada em 1982, a Comunidade Católica Shalom é uma Associação Privada de Fiéis reconhecida pelo Vaticano desde 2007. Presente em São Paulo há quase 22 anos, nossa missão é ser um lugar de encontro com Deus, promovendo a evangelização e a formação de discípulos.
+                </p>
               </div>
 
-              <div class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10">
+              <div class="rounded-3xl bg-marrom-escuro p-10 shadow-xs transition hover:bg-marrom">
                 <div class="flex items-center gap-4 mb-5">
-                  <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" class="h-8 w-8 text-blue-300 flex-none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
-                  <h4 class="text-2xl font-bold text-white md:text-3xl">Nossas ações</h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8 text-creme flex-none">
+                    <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z" clip-rule="evenodd" />
+                  </svg>
+                  <h4 class="text-2xl font-bold text-creme md:text-3xl">O Carisma</h4>
                 </div>
-                <p class="text-base leading-relaxed text-white/75">Estamos unindo forças para renovar os materiais litúrgicos da missão, garantindo a dignidade das celebrações.</p>
+                <p class="text-justify text-base leading-relaxed text-creme">
+                  Nosso carisma nasceu da oferta de vida de Moysés Azevedo, nosso fundador, diante de Jesus Eucarístico. Toda a nossa obra de evangelização brota dessa fonte inesgotável. Cremos que o altar é onde o Céu toca a terra; por isso, cuidar da liturgia é zelar pelo coração da nossa vocação.
+                </p>
               </div>
 
-              <div class="rounded-3xl bg-white/5 p-10 shadow-xs transition hover:bg-white/10 sm:col-span-2 lg:col-span-1">
+              <div class="rounded-3xl bg-marrom-escuro p-10 shadow-xs transition hover:bg-marrom">
                 <div class="flex items-center gap-4 mb-5">
-                  <svg class="hi-solid hi-pencil h-8 w-8 text-blue-300 flex-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" /></svg>
-                  <h4 class="text-2xl font-bold text-white md:text-3xl">A Campanha</h4>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.12 438.83" class="h-9 w-auto text-creme flex-none" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M167.77,182.94a59.17,59.17,0,1,0-109.45-.06"/>
+                    <line x1="113.18" y1="37.2" x2="113.18" y2="81.12"/>
+                    <line x1="113.18" y1="5" x2="113.18" y2="25.12"/>
+                    <line x1="40.04" y1="47.54" x2="82.13" y2="89.63"/>
+                    <line x1="144.11" y1="89.76" x2="189.08" y2="45.45"/>
+                    <line x1="66.65" y1="15.84" x2="98.41" y2="83.95"/>
+                    <line x1="156.67" y1="100.41" x2="198.03" y2="81.12"/>
+                    <line x1="42.06" y1="91.77" x2="68.36" y2="101.16"/>
+                    <line x1="24.42" y1="85.24" x2="30.27" y2="87.49"/>
+                    <line x1="153.67" y1="15.84" x2="154.77" y2="12.81"/>
+                    <line x1="129.22" y1="83.1" x2="149.56" y2="27.21"/>
+                    <path d="M221.12,183.61A108.06,108.06,0,0,1,5,183.61Z"/>
+                    <path d="M55.05,256.47a93.17,93.17,0,0,1-34-58"/>
+                    <path d="M70.51,266.49c-1.87-1-3.7-2-5.49-3.07"/>
+                    <line x1="113.06" y1="203.7" x2="113.06" y2="260.77"/>
+                    <line x1="98.39" y1="222.93" x2="127.73" y2="222.93"/>
+                    <path d="M100.53,327a152.83,152.83,0,0,0-7.11-35.3"/>
+                    <path d="M125.76,353.82c3.15,29.21,17.25,61.6,59.18,80H41.17c41.46-18.2,55.71-50.07,59.07-79"/>
+                    <path d="M132.69,291.67a153.11,153.11,0,0,0-7.06,34.71"/>
+                    <line x1="63.94" y1="422.25" x2="164.41" y2="422.25"/>
+                    <path d="M85.44,353.1a27.62,27.62,0,0,1,55.24,0Z"/>
+                  </svg>
+                  <h4 class="text-2xl font-bold text-creme md:text-3xl">A Campanha</h4>
                 </div>
-                <p class="text-base leading-relaxed text-white/75">Você pode contribuir através das cotas de doação abaixo ou entrando em contato diretamente com nossa secretaria.</p>
+                <p class="text-justify text-base leading-relaxed text-creme">
+                  Inspirados pelo chamado feito a São Francisco para 'reconstruir a Igreja', e celebrando nosso aniversário em São Paulo, queremos renovar nossos objetos litúrgicos. Cada item é um instrumento de evangelização. Participe desta obra e ajude-nos a oferecer com dignidade o nosso melhor ao Senhor.
+                </p>
               </div>
+
             </div>
+            
           </div>
 
           <div class="relative container mx-auto px-4 xl:max-w-5xl">
@@ -242,12 +285,10 @@
             let currentIndex = 0;
             const slider = document.getElementById('carousel-slider');
             const dots = document.querySelectorAll('.dot');
-            const totalSlides = 5; // ATUALIZADO PARA 5
+            const totalSlides = 5;
         
             function updateCarousel() {
-              // Move o slider para a imagem correta
               slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-              // Atualiza os pontos (dots) de paginação
               dots.forEach((dot, i) => {
                 dot.style.width = i === currentIndex ? '1.5rem' : '0.5rem';
                 dot.style.backgroundColor = i === currentIndex ? 'white' : 'rgba(255,255,255,0.5)';
@@ -264,7 +305,6 @@
               updateCarousel();
             }
         
-            // Inicializa o estado dos pontos ao carregar a página
             updateCarousel();
           </script>
         </div>
@@ -272,25 +312,21 @@
         <!-- END Quem somos -->
 
         <!-- Pricing Section -->
-        <div id="doacoes" class="bg-white">
-          <div
-            class="container mx-auto space-y-10 px-6 py-24 sm:px-12 lg:px-8 lg:py-16 xl:max-w-4xl"
-          >
+        <div id="doacoes" class="bg-creme bg-[url('assets/pattern-mb.png')] md:bg-[url('assets/pattern.png')] bg-repeat">
+          <div class="container mx-auto space-y-10 px-6 py-24 sm:px-12 lg:px-8 lg:py-16 xl:max-w-4xl">
+            
             <div class="text-center">
-              <h2 class="mb-4 text-3xl font-extrabold md:text-4xl">
+              <h2 class="mb-4 text-3xl font-extrabold text-marrom-escuro md:text-4xl">
                 Presenteie a Missão de São Paulo!
               </h2>
-              <h3
-                class="mx-auto text-base font-medium text-gray-600 md:text-xl md:leading-relaxed lg:w-2/3"
-              >
-                Você pode ajudar a missão presenteando um item litúrgico, ou doando um valor avulso. Deus abençoe!
+              <h3 class="mx-auto text-base font-medium text-marrom-escuro md:px-0 md:text-lg md:leading-relaxed lg:w-2/3">
+                Neste aniversário da missão, você pode participar oferecendo um presente que servirá diretamente à liturgia e à evangelização. Escolha um dos itens abaixo e ajude-nos a cuidar do Sagrado. Deus abençoe!
               </h3>
             </div>
+            
             <div class="grid grid-cols-2 gap-4 lg:gap-8">
               
-              <div
-                class="flex flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-white hover:border-blue-400 transition-colors"
-              >
+              <div class="flex flex-col overflow-hidden rounded-xl border-2 border-marrom/20 bg-white hover:border-marrom transition-colors shadow-sm hover:shadow-md">
                 <div class="aspect-square w-full bg-gray-100">
                   <img
                     src="assets/item1.jpg"
@@ -299,24 +335,22 @@
                   />
                 </div>
                 <div class="flex grow flex-col p-4 sm:p-6 text-center">
-                  <h4 class="mb-2 text-base font-bold sm:text-xl text-gray-800">
+                  <h4 class="mb-2 text-base font-bold sm:text-xl text-marrom-escuro">
                     Item 1
                   </h4>
                   <div class="mb-4">
-                    <span class="text-xl font-extrabold text-blue-600 sm:text-3xl">R$ 150</span>
+                    <span class="text-xl font-extrabold text-marrom sm:text-3xl">R$ 150</span>
                   </div>
                   <button
                     type="button"
-                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-800 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-blue-700 focus:ring-3 focus:ring-blue-500/50 transition"
+                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-marrom px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-bold text-creme hover:opacity-90 focus:ring-3 focus:ring-marrom/50 transition-all hover:-translate-y-1"
                   >
                     Presenteie!
                   </button>
                 </div>
               </div>
-              <!-- ITEM 2 -->
-              <div
-                class="flex flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-white hover:border-blue-400 transition-colors"
-              >
+              
+              <div class="flex flex-col overflow-hidden rounded-xl border-2 border-marrom/20 bg-white hover:border-marrom transition-colors shadow-sm hover:shadow-md">
                 <div class="aspect-square w-full bg-gray-100">
                   <img
                     src="assets/item2.jpg"
@@ -325,23 +359,22 @@
                   />
                 </div>
                 <div class="flex grow flex-col p-4 sm:p-6 text-center">
-                  <h4 class="mb-2 text-base font-bold sm:text-xl text-gray-800">
+                  <h4 class="mb-2 text-base font-bold sm:text-xl text-marrom-escuro">
                     Item 2
                   </h4>
                   <div class="mb-4">
-                    <span class="text-xl font-extrabold text-blue-600 sm:text-3xl">R$ 300</span>
+                    <span class="text-xl font-extrabold text-marrom sm:text-3xl">R$ 300</span>
                   </div>
                   <button
                     type="button"
-                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-800 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-blue-700 focus:ring-3 focus:ring-blue-500/50 transition"
+                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-marrom px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-bold text-creme hover:opacity-90 focus:ring-3 focus:ring-marrom/50 transition-all hover:-translate-y-1"
                   >
                     Presenteie!
                   </button>
                 </div>
               </div>
-              <!-- END ITEM 2 -->
               </div>
-            </div>
+          </div>
         </div>
 
         <!-- END Pricing Section -->
