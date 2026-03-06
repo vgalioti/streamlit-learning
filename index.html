@@ -321,62 +321,13 @@
                 Presenteie a Missão de São Paulo!
               </h2>
               <h3 class="mx-auto text-base font-medium text-marrom-escuro md:px-0 md:text-lg md:leading-relaxed lg:w-2/3">
-                Neste aniversário da missão, você pode participar oferecendo um presente que servirá diretamente à liturgia e à evangelização. Escolha um dos itens abaixo e ajude-nos a cuidar do Sagrado. Deus abençoe!
+                Neste aniversário da missão, você pode participar oferecendo um presente que servirá diretamente à liturgia e à evangelização desta cidade. Escolha um dos itens abaixo e ajude-nos a cuidar do Sagrado. Deus abençoe!
               </h3>
             </div>
             
-            <div class="grid grid-cols-2 gap-4 lg:gap-8">
+            <div id="grid-presentes" class="grid grid-cols-2 gap-4 lg:gap-8">
               
-              <div class="flex flex-col overflow-hidden rounded-xl border-2 border-marrom/20 bg-white hover:border-marrom transition-colors shadow-sm hover:shadow-md">
-                <div class="aspect-square w-full bg-gray-100">
-                  <img
-                    src="assets/evangeliario.webp"
-                    alt="Evangeliario"
-                    class="h-full w-full object-cover"
-                  />
-                </div>
-                <div class="flex grow flex-col p-4 sm:p-6 text-center">
-                  <h4 class="mb-2 text-base font-bold sm:text-xl text-marrom-escuro">
-                    Evangeliario
-                  </h4>
-                  <div class="mb-4">
-                    <span class="text-xl font-extrabold text-marrom sm:text-3xl">R$ 284</span>
-                  </div>
-                  <a
-                    href="https://app.abacatepay.com/pay/bill_BDqNFPwTp1fxPkrz4B2EEMzh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-marrom px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-bold text-creme hover:opacity-90 focus:ring-3 focus:ring-marrom/50 transition-all hover:-translate-y-1"
-                  >
-                    Presenteie!
-                  </a>
-                </div>
-              </div>
-              
-              <div class="flex flex-col overflow-hidden rounded-xl border-2 border-marrom/20 bg-white hover:border-marrom transition-colors shadow-sm hover:shadow-md">
-                <div class="aspect-square w-full bg-gray-100">
-                  <img
-                    src="assets/item2.jpg"
-                    alt="Foto do Item 2"
-                    class="h-full w-full object-cover"
-                  />
-                </div>
-                <div class="flex grow flex-col p-4 sm:p-6 text-center">
-                  <h4 class="mb-2 text-base font-bold sm:text-xl text-marrom-escuro">
-                    Item 2
-                  </h4>
-                  <div class="mb-4">
-                    <span class="text-xl font-extrabold text-marrom sm:text-3xl">R$ 300</span>
-                  </div>
-                  <button
-                    type="button"
-                    class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-marrom px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-bold text-creme hover:opacity-90 focus:ring-3 focus:ring-marrom/50 transition-all hover:-translate-y-1"
-                  >
-                    Presenteie!
-                  </button>
-                </div>
-              </div>
-              </div>
+            </div>
           </div>
         </div>
 
@@ -409,7 +360,7 @@
                 Instagram
               </a>
               <a
-                href="https://wa.me/5511000000000"
+                href="https://wa.me/5511968292148"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="font-bold text-base text-creme hover:text-white hover:-translate-y-0.5 transition-all"
@@ -425,5 +376,146 @@
       <!-- END Page Content -->
     </div>
     <!-- END Page Container -->
+
+    <script>
+  // A sua lista de presentes
+  const presentes = [
+    {
+      nome: "Restauração do Ostensório",
+      preco: "R$ 4.200",
+      imagem: "assets/item1.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Véu Umeral",
+      preco: "R$ 875",
+      imagem: "assets/item2.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Cruz Processional",
+      preco: "R$ 1.144",
+      imagem: "assets/item3.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Tochas",
+      preco: "R$ 2.000",
+      imagem: "assets/item4.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Cruz de Altar",
+      preco: "R$ 300",
+      imagem: "assets/item5.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Evangeliário",
+      preco: "R$ 284",
+      imagem: "assets/item6.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Castiçal de chão",
+      preco: "R$ 600",
+      imagem: "assets/item7.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Patena",
+      preco: "R$ 865",
+      imagem: "assets/item8.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Naveta",
+      preco: "R$ 535",
+      imagem: "assets/item9.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Toalha de Altar (Solenidade)",
+      preco: "R$ 330",
+      imagem: "assets/item10.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Toalha de Altar (Ordinário)",
+      preco: "R$ 200",
+      imagem: "assets/item11.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Lamparina para o Altar",
+      preco: "R$ 300",
+      imagem: "assets/item12.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Âmbula da Hóstia Magna",
+      preco: "R$ 1.352",
+      imagem: "assets/item13.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Cálice",
+      preco: "R$ 1.690",
+      imagem: "assets/item14.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Credência para a Capela",
+      preco: "R$ 800",
+      imagem: "assets/item15.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Túnica Branca",
+      preco: "R$ 250",
+      imagem: "assets/item16.webp",
+      link_abacatepay: "pix.html"
+    },
+    {
+      nome: "Doação Avulsa",
+      preco: "",
+      imagem: "assets/item17.png",
+      link_abacatepay: "pix.html"
+    }
+  ];
+
+  const grid = document.getElementById('grid-presentes');
+
+  presentes.forEach(item => {
+    grid.innerHTML += `
+      <div class="flex flex-col overflow-hidden rounded-xl border-2 border-marrom/20 bg-white hover:border-marrom transition-colors shadow-sm hover:shadow-md">
+        <div class="aspect-square w-full bg-gray-100">
+          <img
+            src="${item.imagem}"
+            alt="Foto de ${item.nome}"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div class="flex grow flex-col p-4 sm:p-6 text-center">
+          <h4 class="mb-2 text-base font-bold sm:text-xl text-marrom-escuro">
+            ${item.nome}
+          </h4>
+          <div class="mb-4">
+            <span class="text-xl font-extrabold text-marrom sm:text-3xl">${item.preco}</span>
+          </div>
+          <a
+            href="${item.link_abacatepay}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-marrom px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-bold text-creme hover:opacity-90 focus:ring-3 focus:ring-marrom/50 transition-all hover:-translate-y-1"
+          >
+            Presenteie!
+          </a>
+        </div>
+      </div>
+    `;
+  });
+  </script>
+
   </body>
 </html>
